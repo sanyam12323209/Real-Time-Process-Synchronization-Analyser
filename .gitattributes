@@ -1,0 +1,24 @@
+# Ensure consistent line endings for all text files
+* text=auto
+
+# Explicitly set line endings for batch files (Windows)
+*.bat text eol=crlf
+
+# Treat binary files as binary so Git doesn’t attempt to merge or convert them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.exe binary
+
+# Use Python-specific diff settings for Python files
+*.py diff=python
+
+# Mark common documentation and text files for text diffing
+*.txt diff
+
+# For Jupyter Notebooks, you may choose a custom diff tool (optional)
+*.ipynb diff=jupyternotebook
